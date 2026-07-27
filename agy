@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+# Load local AGYFlow project-specific environment variables
+if [ -f .env.agyflow ]; then
+    export $(cat .env.agyflow | xargs)
+fi
+
+# Pass execution directly to Gemini through AgyFlow proxy
+exec agy "$@"

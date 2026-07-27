@@ -1,0 +1,10 @@
+{
+  "yolo": true,
+  "telemetry": true,
+  "project_id": "rge-analytics-v2",
+  "security": {
+    "auth": {
+      "selectedType": "gemini-api-key"
+    }
+  }
+}
